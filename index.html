@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculators</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/Calculators/Real Calculator.js" defer></script>
+    <script src="js//Classes/Complex.js" defer></script>
+    <script src="js//Classes/Vector.js" defer></script>
+    <script src="js/Classes/Matrix.js" defer></script>
+    <script src="js/Classes/Member.js" defer></script>
+    <script src="js/Classes/Polynomial.js" defer></script>
+    <script src="js/Calculators/Complex Calculator.js" defer></script>
+    <script src="js/Calculators/VectorCalculator.js" defer></script>
+    <script src="js/Calculators/MatrixCalculator.js" defer></script>
+    <script src="js/Calculators/Polynomial Calculator.js" defer></script>
+    <script src="js/Calculators/Calculator.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+    <div>
+        <textarea id="A" placeholder="A" rows="15" cols="20"></textarea>
+    </div>
+
+    <div>
+        <textarea id="B" placeholder="B" rows="15" cols="20"></textarea>
+    </div>
+
+    <div>
+        <textarea id="C" placeholder="Result" rows="15" cols="20"></textarea>
+    </div>
+
+    <div>
+        <button class="operand" data-operand="add">+</button>
+        <button class="operand" data-operand="sub">-</button>
+        <button class="operand" data-operand="mult">×</button>
+        <button class="operand" data-operand="div">÷</button>
+        <button class="operand" data-operand="pow">x <span
+                style="position: relative; bottom: .4em; right: .1em;">y</button>
+        <button class="operand" data-operand="prod">Prod</button>
+        <button class="operand" data-operand="one">One</button>
+        <button class="operand" data-operand="zero">Zero</button>
+        <button id="ce" data-operand="clear" onclick="backspc()">CE</button>
+        <button id="ac" data-operand="clearb" onclick="screen.value = ''">AC</button>
+
+    </div>
+
+</body>
+
+</html>
